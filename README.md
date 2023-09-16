@@ -11,11 +11,11 @@ License: BSD-3
 
 Welcome to my chess library!
 
-This library has a fully fledged rustdoc available [at this page](https://htmlpreview.github.io/https://github.com/IndaPlus23/eskilny-task-03-chess/blob/main/doc/lib/index.html) where you can view docstrings, source code and everything else without feeling so overwhelmed. Try it out!
+This library has a fully fledged rustdoc available [at this page](https://indaplus23.github.io/eskilny-task-03-chess/doc/lib/index.html) where you can view docstrings, source code and everything else without feeling so overwhelmed. Try it out!
 
 The recommended use of this library is that you interact with the structs Game and Position. For an example of how to interact with the library, see [main.rs](src/main.rs) which is the interface I used for playing the game while debugging it. The tests in [lib_tests.rs](src/lib_tests.rs) may also provide some insight.
 
-Game is the game library! See [Game in the rustdoc for details.](https://htmlpreview.github.io/https://github.com/IndaPlus23/eskilny-task-03-chess/blob/main/doc/lib/struct.Game.html)
+Game is the game library! See [Game in the rustdoc for details.](https://indaplus23.github.io/eskilny-task-03-chess/doc/lib/struct.Game.html)
 This library is implemented fully. It doesn't currently offer any way to view past game states or display recent moves,
 but other than that the library implements virtually every rule present on [Rules of Chess - Wikipedia](https://en.wikipedia.org/wiki/Rules_of_chess), including en passant, castling and virtually every rule that draws the game.
 
@@ -31,7 +31,7 @@ If you want to represent the state of the board in some way, learn to work with 
 
 You can get the current board via the function `Game::get_board()`. Moves can be made with the methods `make_move(...)` or `make_move_pos(...)`, the latter of which I recommend.
 
-Once again, check out [the rustdoc](https://htmlpreview.github.io/https://github.com/IndaPlus23/eskilny-task-03-chess/blob/main/doc/lib/index.html)!
+Once again, check out [the rustdoc](https://indaplus23.github.io/eskilny-task-03-chess/doc/lib/index.html)!
 
 Good luck!
 
