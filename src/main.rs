@@ -1,6 +1,7 @@
 use chess_engine::Game;
 use chess_engine::GameState;
 use chess_engine::Position;
+use chess_engine::PieceType;
 
 /*
 
@@ -70,15 +71,15 @@ fn main() {
                 .next() // we iterate over the first line
                 .expect("Invalid iostream.")
                 .expect("Error."); // expect errors
-            let input: Vec<&str> = input_tmp
-                .trim() // remove whitespaces
-                .split(" ")
-                .collect();
-
-            match game.set_promotion(String::from(input[0])) {
-                Ok(_) => println!("Successfully promoted the piece!"),
+            let input = input_tmp
+                .trim(); // remove whitespaces
+            match PieceType::from_str(input) {
+                Ok(piece) => match game.set_promotion(piece) {
+                    Ok(_) => println!("Successfully promoted the piece!"),
+                    Err(msg) => println!("Error received:\n{}\nPlease try again!", msg),
+                }
                 Err(msg) => println!("Error received:\n{}\nPlease try again!", msg),
-            }
+            }            
         }
     }
 }
